@@ -536,8 +536,6 @@ static STimeWindow getActiveTimeWindow(SWindowResInfo *pWindowResInfo, int64_t t
     w.ekey = pQuery->window.ekey;
   }
 
-  assert(ts >= w.skey && ts <= w.ekey);
-
   return w;
 }
 
